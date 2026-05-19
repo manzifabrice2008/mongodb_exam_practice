@@ -63,8 +63,8 @@ function Dashboard() {
           <div key={item._id} className="flex items-center justify-between bg-gray-100 rounded px-4 py-3">
             <span>{item.product} - {item.quantity}</span>
             <div className="flex gap-2">
-              <button className="bg-yellow-500 text-white px-4 py-2 rounded text-sm hover:bg-yellow-600" onClick={() => edit(item._id, item.product, item.quantity)}>Edit</button>
-              <button className="bg-red-500 text-white px-4 py-2 rounded text-sm hover:bg-red-600" onClick={() => out(item._id)}>Out</button>
+              <button className="bg-blue-900 text-white px-4 py-2 rounded text-sm hover:bg-blue-500" onClick={() => edit(item._id, item.product, item.quantity)}>Edit</button>
+              <button className="bg-green-900 text-white px-4 py-2 rounded text-sm hover:bg-green-500" onClick={() => out(item._id)}>Out</button>
             </div>
           </div>
         ))}
